@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html 
+            lang="en"
+        
+     
+        dir="en" 
+    >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+    
+    
+    <!-- Scripts -->
+            <script src="/js/main.js?v=1.4.24"></script>
+        <!-- /Scripts -->
+    
+    
+    <!-- Styles -->
+            <link href="https://www.kiloo.com/css/web-app.css?v=1.4.24" rel="stylesheet" />
+        
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700,900" rel="stylesheet" />
+    <link rel="canonical" href="https://www.kiloo.com/en/jungle-run/" />
+
+
+
+    <link rel="stylesheet" href="https://cdn.consentmanager.mgr.consensu.org/delivery/cmp.min.css" />
+<script>function cmp_getlang(j){if(typeof(j)!="boolean"){j=true}if(j&&typeof(cmp_getlang.usedlang)=="string"&&cmp_getlang.usedlang!==""){return cmp_getlang.usedlang}var g=["DE","EN","FR","IT","NO","DA","FI","ES","PT","RO","BG","ET","EL","GA","HR","LV","LT","MT","NL","PL","SV","SK","SL","CS","HU","RU"];var c=[];var f=location.hash;var e=location.search;var a="languages" in navigator?navigator.languages:[];if(f.indexOf("cmplang=")!=-1){c.push(f.substr(f.indexOf("cmplang=")+8,2))}else{if(e.indexOf("cmplang=")!=-1){c.push(e.substr(e.indexOf("cmplang=")+8,2))}else{if(a.length>0){for(var d=0;d<a.length;d++){c.push(a[d])}}}}if("language" in navigator){c.push(navigator.language)}if("userLanguage" in navigator){c.push(navigator.userLanguage)}var h="";for(var d=0;d<c.length;d++){var b=c[d].toUpperCase();if(b.indexOf("-")!=-1){b=b.substr(0,2)}if(g.indexOf(b)!=-1){h=b;break}}if(h==""){h="EN"}h=h.toUpperCase();return h}(function(){window.gdprAppliesGlobally=true;window.cmp_id=1134;window.cmp_params="";window.cmp_host="consentmanager.mgr.consensu.org";window.cmp_cdn="cdn.consentmanager.mgr.consensu.org";var a="";var c="";if("cmp_getlang" in window){a=window.cmp_getlang().toLowerCase();c="_"+a}var b=document.createElement("script");b.src="https://"+window.cmp_host+"/delivery/cmp.php?id="+window.cmp_id+"&h="+encodeURIComponent(location.href)+"&"+window.cmp_params+(document.cookie.length>0?"&__cmpfcc=1":"")+"&l="+a+"&o="+(new Date()).getTime();b.type="text/javascript";b.async=true;if(document.body){document.body.appendChild(b)}else{if(document.currentScript){document.currentScript.parentElement.appendChild(b)}else{document.write(b.outerHTML)}}var b=document.createElement("script");b.src="https://"+window.cmp_cdn+"/delivery/cmp"+c+".min.js";b.type="text/javascript";b.async=true;if(document.body){document.body.appendChild(b)}else{if(document.currentScript){document.currentScript.parentElement.appendChild(b)}else{document.write(b.outerHTML)}}window.cmp_addFrame=function(){if(!window.frames.__cmpLocator){if(document.body){var d=document.createElement("iframe");d.style.cssText="display:none";d.name="__cmpLocator";document.body.appendChild(d)}else{window.setTimeout("window.cmp_addFrame()",10)}}};window.cmp_addFrame();window.cmp_stub=function(){var d=arguments;__cmp.a=__cmp.a||[];if(!d.length){return __cmp.a}else{if(d[0]==="ping"){d[2]({gdprAppliesGlobally:gdprAppliesGlobally,cmpLoaded:false},true)}else{if(d.length==4&&d[3]===false){d[2]({},false)}else{__cmp.a.push([].slice.apply(d))}}}};window.cmp_msghandler=function(h){var d=typeof h.data==="string";try{var g=d?JSON.parse(h.data):h.data}catch(j){var g=null}if(typeof(g)==="object"&&g!==null&&"__cmpCall" in g){var f=g.__cmpCall;window.__cmp(f.command,f.parameter,function(k,i){var e={__cmpReturn:{returnValue:k,success:i,callId:f.callId}};h.source.postMessage(d?JSON.stringify(e):e,"*")})}};if(typeof(__cmp)!=="function"&&typeof(__cmp)!=="object"&&(typeof(__cmp)==="undefined"||__cmp!==null)){window.__cmp=window.cmp_stub;__cmp.msgHandler=window.cmp_msghandler;if(window.addEventListener){window.addEventListener("message",window.cmp_msghandler,false)}else{window.attachEvent("onmessage",window.cmp_msghandler)}}})();</script>
+
+
+<script>
+    var consent = {
+        age: "",
+        cmds: [],
+        cmd: function(cb){
+            consent.cmds.push(cb);
+        },
+
+        init: function()
+        {
+            window.__cmp("addEventListener", ["init", this.cmp_init, false], null)
+            window.__cmp("addEventListener", ["settings", this.cmp_settings, false], null)
+            window.__cmp("addEventListener", ["consentscreen", this.cmp_consentscreen, false], null)
+            window.__cmp("addEventListener", ["consentscreenoff", this.cmp_consentscreenoff, false], null)
+            window.__cmp("addEventListener", ["consent", this.cmp_consent, false], null)
+            window.__cmp("addEventListener", ["consentapproved", this.cmp_consentapproved, false], null)
+            window.__cmp("addEventListener", ["consentrejected", this.cmp_consentrejected, false], null)
+            window.__cmp("addEventListener", ["consentcustom", this.cmp_consentcustom, false], null)
+            window.__cmp("addEventListener", ["settings", this.cmp_settings, false], null)
+            window.__cmp('setAgeCallback', this.ageCallback);
+        },
+
+        ageCallback: function(y,m,d,a){
+            if (y==0){
+                /*
+                if year is not set, then we mark it as "undetermined", meaning the cmp flashes
+                the year-selection red.
+                 */
+                return 2;
+            }
+
+            /*
+            * Legal age of consent, around the globe, highest value, 18
+            * */
+            if (a>=18){
+                consent.age = "ok";
+                return 1;
+            }
+            
+            consent.age = "notok";
+            return 0;
+        },
+
+        cmp_init: function(e, o) { },
+        cmp_settings: function(e,o) { },
+        cmp_consentscreen: function(e,o) { },
+        cmp_consentscreenoff: function(e,o) { },
+        cmp_consent: function(e,o) {
+            consent.the_consent = o;
+            consent.standardPurposeObject = o.getPublisherConsents().standardPurposeConsents;
+            consent.runCmd();
+            
+            if (consent.age == "notok"){
+                window.location.href = "https://kids.kiloo.com";
+                return 1;
+            }
+        },
+
+        cmp_consentapproved: function(e,o){
+            window.location.reload();
+        },
+
+        cmp_consentrejected: function(e,o){
+            window.location.reload();
+        },
+
+        cmp_consentcustom: function(e,o){
+            window.location.reload();
+        },
+
+        runCmd: function(){
+            consent.cmd = consent.runSingleCmd;
+            for(i=0;i<consent.cmds.length;i++)
+            {
+                consent.runSingleCmd( consent.cmds[i] );
+            }
+            consent.cmds = [];
+        },
+        runSingleCmd: function(cb){ cb(); },
+
+        show: function(){
+            window.__cmp('showScreen');
+        },
+
+        canAds: function(){
+            return consent.standardPurposeObject[3] && consent.standardPurposeObject[1] && consent.standardPurposeObject[2];
+        },
+        canAnalytics: function(){
+            return consent.standardPurposeObject[4] && consent.standardPurposeObject[5];
+        },
+
+    };
+    consent.init();
+
+</script>
+
+
+
+
+    
+    
+<title>Jungle Run (Awesome Running Game) Free to Play | Kiloo.com</title>
+<meta name='robots' content='index, follow' />
+<meta name='description' content='Finders keepers! Join Sir Bottomtight as he explores ancient ruins in search of treasure. Be warned, the treasure is guarded.' />
+
+<link rel="alternate" href="https://www.kiloo.com/en/jungle-run/" hreflang="en" />
+                            
+        
+                                    <link rel="alternate" href="https://www.kiloo.com/de/jungle-run/" hreflang="de" />
+                            
+        
+                                    <link rel="alternate" href="https://www.kiloo.com/es/jungle-run/" hreflang="es" />
+                            
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+        
+                                    
+    
+
+
+
+
+
+
+
+<style>
+    
+    #mboost-dp1{
+        max-width:1100px;
+        margin:0 auto;
+    }
+    /*
+    #mboost-hwds{
+        top: calc(94px + 340px);
+        left: 50%;
+        transform:translatex(-935px);
+        position:fixed;
+        width:1870px;
+        height:0px;
+    }
+    #mboost-hwds #mboost-ds1{
+        float:left;
+    }    
+    #mboost-hwds #mboost-ds2{
+        float:right;
+    } */   
+</style>
+
+<script>
+    var game = {
+        title:'Jungle Run (Awesome Running Game) Free to Play | Kiloo.com',
+    }
+</script>
+
+    <script>
+    var mboost_filename = "mboost-qzrmiy-14xzbdt-14gq1q0-13z62hb.js";
+    var mboost_game_filename = "mboost-10yvcze-11k044o-10xmkkx-10v6zk6.js"; // new
+    var mboost_publisher_pageid = 1028209;
+    var mboost_fallback = true;
+    var mboost_fallback_dr1 = '<ins class="adsbygoogle"'+
+                          'style="display:inline-block;width:300px;height:250px"'+
+                          'data-ad-client="ca-pub-4930990108205961"'+
+                          'data-ad-slot="4719653411"></ins>';
+</script>
+
+
+            <!-- header -->
+<script>
+    if (!("mboost_filename" in window))
+        window.mboost_filename = "mboost-qzrmiy-14xzbdt-14gq1q0-13z62hb-752.js";
+</script>
+
+<meta name="google-site-verification" content="WhbVsBn_mabfyNzHrDvPTPqeYfToqFATFoo9A136SL4" />
+    
+    
+    <script src="/js/game.js??v=1.4.24"></script>
+
+
+
+
+
+    <script>
+    consent.cmd(function()
+    {
+        if (consent.canAds())
+        {
+            consentCmd = window.consentCmd||[];
+            consentCmd.forEach(function(o){o.call(window);});
+            consentCmd = {
+                'push': function(o){o.call();}
+            };
+        }
+    });
+    </script>
+
+    <style>
+
+                
+            body{background-color: black;}
+
+                                            body{
+                    background-image: url('/uploads/theme/1574745489-playnow_bg_tile.png');
+                    background-repeat:  repeat-x   repeat-y                 }
+            
+            body{background-color: black;}
+        
+                    .page-error p,
+            .page-error a,
+            .home h3,
+            h1,
+            .new-games h3,
+            .popular-game-categories h3,
+            .popular-game-categories a,
+            .popular-game-categories a p,
+            .popular-game-categories span,
+            .popular-game-categories span p
+            {
+                color:black !important;
+            }
+        
+                .body-wrapper nav.navbar-default{
+            background-color: #1f252d !important;
+        }
+        
+                .body-wrapper nav.navbar-default{
+            color: white !important;
+        }
+        
+        .slug-subway-surfers .home .subway, .slug-frisbee-forever .home .subway{
+            background-color:#FCF3EA;
+        }
+        .slug-subway-surfers .home .subway h1,
+        .slug-subway-surfers .home .subway h3,
+        .slug-frisbee-forever .home .subway h1,
+        .slug-frisbee-forever .home .subway h3
+        {
+            color:black !important;
+        }
+    </style>
+    
+</head>
+<body 
+    class="onegame slug-jelly-doods identifier-1147443154 locale-en"
+ 
+>
+
+
+
+
+<div class="body-wrapper">
+
+
+
+
+
+    <nav class="navbar navbar-default navbar-static-top">
+
+        <div class="navbar-wrap">
+
+            <div class="logo">
+                <a href='/'><img src='/images/kiloo.png' id="logo-main"></a>
+                                                      <a href="/"><img src='https://kiloo-ceb9.kxcdn.com/uploads/theme/1574745449-playnow_top_logo.png' id="logo-subtext"></a>
+                            </div>
+
+
+            <div class="menu-top-menu-permanent-container">
+                <div class="content">
+                    <ul class='menu'>
+
+                        
+                        <li><a href='/'>
+                                                                    All games
+                                                            </a></li>
+
+                        <li><a href='/subway-surfers/' class="emphasis">
+                                                                    Subway Surfers
+                                                            </a></li>
+
+                    </ul>
+
+                    <div id="flags">
+
+                        <img src="/images/flags3/flag_gb.svg" class="toggler">
+
+                        <div id="flags-foldout">
+                            <ul>
+
+                                                                                                                                                        <li><a href="/en/jungle-run/"><img src="/images/flags3/flag_gb.svg"></a></li>
+                                                                                                                                                                <li><a href="/de/jungle-run/"><img src="/images/flags3/flag_de.svg"></a></li>
+                                                                                                                                                                <li><a href="/es/jungle-run/"><img src="/images/flags3/flag_es.svg"></a></li>
+                                                                                                                                                                <li><a href="/fr/jungle-run/"><img src="/images/flags3/flag_fr.svg"></a></li>
+                                                                                                                                                                <li><a href="/pt/jungle-run/"><img src="/images/flags3/flag_pt.svg"></a></li>
+                                                                                                                                                                <li><a href="/ru/jungle-run/"><img src="/images/flags3/flag_ru.svg"></a></li>
+                                                                                                                                                                <li><a href="/tr/jungle-run/"><img src="/images/flags3/flag_tr.svg"></a></li>
+                                                                                                                                                                <li><a href="/pl/jungle-run/"><img src="/images/flags3/flag_pl.svg"></a></li>
+                                                                                                                                                                <li><a href="/it/jungle-run/"><img src="/images/flags3/flag_it.svg"></a></li>
+                                                                                                                                                                <li><a href="/ar/jungle-run/"><img src="/images/flags3/flag_ar.svg"></a></li>
+                                                                                                                                                                <li><a href="/hiin/jungle-run/"><img src="/images/flags3/flag_in.svg"></a></li>
+                                                                                                                                                                <li><a href="/no/jungle-run/"><img src="/images/flags3/flag_no.svg"></a></li>
+                                                                                                                                                                <li><a href="/se/jungle-run/"><img src="/images/flags3/flag_se.svg"></a></li>
+                                                                                                                                                                <li><a href="/id/jungle-run/"><img src="/images/flags3/flag_id.svg"></a></li>
+                                                                                                                                                                <li><a href="/ptr/jungle-run/"><img src="/images/flags3/flag_ptr.svg"></a></li>
+                                                                                                                                                                <li><a href="/nl/jungle-run/"><img src="/images/flags3/flag_nl.svg"></a></li>
+                                                                            
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown-enable"></div>
+            <div class="dropdown-close">-</div>
+
+        </div>
+
+    </nav>
+
+    
+<div class='overlay'>
+    <div class='m'>
+        <span>Close</span>
+    </div>
+    <div class='g'></div>
+</div>
+
+<div class='page-content'>
+
+
+    <div class='container-slim pt-10'>
+        <div id="area-1"></div>
+        <div class='row'>
+            <div class='col-mini-first'>
+
+                
+
+                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/mini-o-stars/'>
+                    
+
+                     
+
+                                            <p class='title'>Mini-O Stars</p>
+                    
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/550/1556538537-mini-o-stars-small.jpg' alt='Mini-O Stars (Online Jumping Game) Free to Play | Kiloo.com'>
+                    
+                                          </a>
+                    
+                </div>
+                
+
+                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/goblins-vs-skeletons/'>
+                    
+
+                     
+
+                                            <p class='title'>Goblins VS Skeletons</p>
+                    
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/26/1 - 1537204491 - 1.jpg' alt='Goblins VS Skeletons ( Cool Online Skill Game ) Free to Play | Kiloo.com'>
+                    
+                                          </a>
+                    
+                </div>
+                
+
+                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/tap-them-all/'>
+                    
+
+                     
+
+                                            <p class='title'>Tap them All</p>
+                    
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/434/1554813639-TAP-THEM-ALL-SMALL.jpg' alt='Tap Them All (Fun Matching Game) Free to Play | Kiloo.com'>
+                    
+                                          </a>
+                    
+                </div>
+                
+
+                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/santa-run/'>
+                    
+
+                     
+
+                                            <p class='title'>Santa Run</p>
+                    
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/583/1559136472-santa-run-small.jpg' alt='Santa Run (Fun Jumping Game) Free to Play | Kiloo.com'>
+                    
+                                          </a>
+                    
+                </div>
+                
+
+                <div class='game'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3BhcnR5LWNhdC8=">
+                    
+
+                     
+
+                                            <p class='title'>Party Cat</p>
+                    
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1366/1578311477-party-cat-small.jpg' alt='Party Cat'>
+                    
+                                            </span>
+                    
+                </div>
+                
+
+                <div class='game'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3B1c2gtdGhlLWRyYWdvbi8=">
+                    
+
+                     
+
+                                            <p class='title'>Push the Dragon</p>
+                    
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1264/1577446253-push-the-dragon-small.jpg' alt='Push the Dragon'>
+                    
+                                            </span>
+                    
+                </div>
+                
+
+            </div>
+
+            <div class='col-large'>
+
+                <img src='https://kiloo-ceb9.kxcdn.com/images/play_button.png' class='play-now'>
+
+                <textarea class='game-content-raw' style='display:none;'>&lt;iframe width=&#039;100%&#039; height=&#039;100%&#039; src=&#039;https://storage-cdn.kiloo.com/sir-bottomtight/html5/&#039;&gt;&lt;/iframe&gt;</textarea>
+
+
+
+                <div class='game-content'>
+                    
+                </div>
+
+                <div class="game-subsection">
+
+                    
+                    <div class="top-bar">
+                        <div class="title" style="margin-right:0;">Jungle Run</div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class='col-mini-last'>
+
+                                <div class='game'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2RyYWdvbi1maXJlLWFuZC1mdXJ5Lw==">
+                    
+
+                    
+
+                                            <p class='title'>Dragon Fire and Fury</p>
+                     
+
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1267/1577114376-Dragon-Fire-and-Fury-small.jpg' alt='Dragon Fire and Fury'>
+                    
+                                            </span>
+                    
+                </div>
+                                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/super-fist/'>
+                    
+
+                    
+
+                                            <p class='title'>Super Fist</p>
+                     
+
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/395/1554383466-SUPER-FIST-SMALL.jpg' alt='Super Fist (Fun Arcade Game) Free to Play | Kiloo.com'>
+                    
+                                            </a>
+                    
+                </div>
+                                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/mouse-trap/'>
+                    
+
+                    
+
+                                            <p class='title'>Mouse Trap</p>
+                     
+
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/113/1-1540197937-mouse-trap-small.jpg' alt='Mouse Trap ( Online Puzzle Thinking Game ) Free to Play | Kiloo.com'>
+                    
+                                            </a>
+                    
+                </div>
+                                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/dont-crash-the-car/'>
+                    
+
+                    
+
+                                            <p class='title'>Don&#039;t Crash The Car</p>
+                     
+
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/421/1554280426-don&#039;t-crash-the-car-small.jpg' alt='Don’t Crash The Car (Fun Racing Game) Free to Play | Kiloo.com'>
+                    
+                                            </a>
+                    
+                </div>
+                                <div class='game'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3BhcGVyLW1vbnN0ZXItdHJ1Y2stcmFjZS8=">
+                    
+
+                    
+
+                                            <p class='title'>Paper Monster Truck Race</p>
+                     
+
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1286/1576595952-Paper-Monster-Truck-Race-small.jpg' alt='Paper Monster Truck Race'>
+                    
+                                            </span>
+                    
+                </div>
+                                <div class='game'>
+
+                                            <a href='https://www.kiloo.com/en/jelly-doods/'>
+                    
+
+                    
+
+                                            <p class='title'>Jelly Doods</p>
+                     
+
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/266/1550063872-jellydoods' alt='Jelly Doods ( Online Thinking Game ) Free to Play | Kiloo.com'>
+                    
+                                            </a>
+                    
+                </div>
+                
+
+
+            </div>
+        </div>
+
+        <div id="area-3"></div>
+
+    </div>
+
+    <div class='container-slim pt-10'><div class='container pt-10' id='new-popular'><div class='row'>
+        
+        <div class='col-4 new-games'>
+            <h3 class='px-0'>New Games</h3>
+
+            <div class='row'>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3N1cGVyLTgtcmFjZS8=">
+                    
+                    
+
+                                            <p class='title'>Super 8 Race</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1521/1580393070-Super-8-race-.jpg' alt='Super 8 Race'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2NvbGxlY3Rvci1tb3VzZS8=">
+                    
+                    
+
+                                            <p class='title'>Collector Mouse</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1520/1580391760-collector-mouse-.jpg' alt='Collector Mouse'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2hvcmlrLXZpa2luZy8=">
+                    
+                    
+
+                                            <p class='title'>Horik Viking</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1519/1580391103-Horik-Viking-.jpg' alt='Horik Viking'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL25hdmUteC1yYWNlci8=">
+                    
+                    
+
+                                            <p class='title'>Nave X Racer</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1518/1580389717-nave-x-racer-.jpg' alt='Nave X Racer'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2tpZHMtbWVtb3J5LXdpbGQtYW5pbWFscy8=">
+                    
+                    
+
+                                            <p class='title'>Kids Memory Wild Animals</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1517/1580387109-Kids-Memory-Wild-Animals-.jpg' alt='Kids Memory Wild Animals'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2NpdHktZHV0eS12ZWhpY2xlcy1qaWdzYXcv">
+                    
+                    
+
+                                            <p class='title'>City Duty Vehicles Jigsaw</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1516/1580386532-City-Duty-Vehicles-Jigsaw-.jpg' alt='City Duty Vehicles Jigsaw'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2hhcHB5LXJhYmJpdHMv">
+                    
+                    
+
+                                            <p class='title'>Happy Rabbits</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1515/1580385131-Happy-Rabbits-.jpg' alt='Happy Rabbits'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3NsZWVweS1iZWF1dHktaGVhbC1hbmQtc3BhLw==">
+                    
+                    
+
+                                            <p class='title'>Sleepy Beauty Heal and Spa</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1514/1580384045-Sleepy-Beauty-Heal-and-Spa-.jpg' alt='Sleepy Beauty Heal and Spa'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL2JhbGwtYW5kLWJyaWNrcy8=">
+                    
+                    
+
+                                            <p class='title'>Balls &amp; Bricks</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1513/1580301017-ball-and-bricks-242X175.jpg' alt='Balls &amp; Bricks'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL25haWxzLW1ha2VvdmVyLw==">
+                    
+                    
+
+                                            <p class='title'>Nails Makeover</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1497/1579704017-Nails Makeover 242 x 192.jpg.jpg' alt='Nails Makeover'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3ByaW5jZXNzZXMtbmFpbHMtc2Fsb24v">
+                    
+                    
+
+                                            <p class='title'>Princesses Nail Salon</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1496/1579703817-Princesses Nails Salon 242 x 192.jpg.jpg' alt='Princesses Nail Salon'>
+                    
+                                         </span>
+                    
+                </div>
+                
+                <div class='col-1 image-small'>
+
+                                            <span class="href" data-href="aHR0cHM6Ly93d3cua2lsb28uY29tL2VuL3N1cGVyaGVyby1wcmluY2Vzc2VzLW5haWxzLXNhbG9uLw==">
+                    
+                    
+
+                                            <p class='title'>Superhero Princesses Nails Salon</p>
+                     
+
+                                            <img src='https://kiloo-ceb9.kxcdn.com/uploads/game/1495/1579703559-Superhero Princesses Nails Salon 242 x 192.jpg.jpg' alt='Superhero Princesses Nails Salon'>
+                    
+                                         </span>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+
+        <div class='col-4 px-0 pl-3 popular-game-categories'>
+            <h3>Related Categories</h3>
+            <div class='row'>
+
+                                    <div class='col-3-p-50 pb-4'>
+
+                                                    <a href='https://www.kiloo.com/en/action-games/'>
+                        
+
+                                                     <img class='pull-left' src='https://kiloo-ceb9.kxcdn.com/uploads/category/14/4 - 1537207949 - action-games.jpg' alt='
+                                                            Action Games
+                                                        '>
+                                                <p>
+                                                            Action Games
+                                                    </p>
+
+                                            </a>
+                    
+                    </div>
+                                    <div class='col-3-p-50 pb-4'>
+
+                                                    <a href='https://www.kiloo.com/en/arcade-games/'>
+                        
+
+                                                     <img class='pull-left' src='https://kiloo-ceb9.kxcdn.com/uploads/category/28/4 - 1537207975 - arcade-games.jpg' alt='
+                                                            Arcade Games
+                                                        '>
+                                                <p>
+                                                            Arcade Games
+                                                    </p>
+
+                                            </a>
+                    
+                    </div>
+                                    <div class='col-3-p-50 pb-4'>
+
+                                                    <a href='https://www.kiloo.com/en/cool-games/'>
+                        
+
+                                                     <img class='pull-left' src='https://kiloo-ceb9.kxcdn.com/uploads/category/35/4 - 1537207992 - cool-games.jpg' alt='
+                                                            Cool Games
+                                                        '>
+                                                <p>
+                                                            Cool Games
+                                                    </p>
+
+                                            </a>
+                    
+                    </div>
+                                    <div class='col-3-p-50 pb-4'>
+
+                                                    <a href='https://www.kiloo.com/en/platform-games/'>
+                        
+
+                                                     <img class='pull-left' src='https://kiloo-ceb9.kxcdn.com/uploads/category/32/1556275409-platform-games-icon¨.jpg' alt='
+                                                            Platform Games
+                                                        '>
+                                                <p>
+                                                            Platform Games
+                                                    </p>
+
+                                            </a>
+                    
+                    </div>
+                                    <div class='col-3-p-50 pb-4'>
+
+                                                    <a href='https://www.kiloo.com/en/running-games/'>
+                        
+
+                                                     <img class='pull-left' src='https://kiloo-ceb9.kxcdn.com/uploads/category/88/1566307650-running-games.jpg' alt='
+                                                            Running Games
+                                                        '>
+                                                <p>
+                                                            Running Games
+                                                    </p>
+
+                                            </a>
+                    
+                    </div>
+                                    <div class='col-3-p-50 pb-4'>
+
+                                                    <a href='https://www.kiloo.com/en/shooting-games/'>
+                        
+
+                                                     <img class='pull-left' src='https://kiloo-ceb9.kxcdn.com/uploads/category/31/4 - 1537208777 - shooting-games.jpg' alt='
+                                                            Shooting Games
+                                                        '>
+                                                <p>
+                                                            Shooting Games
+                                                    </p>
+
+                                            </a>
+                    
+                    </div>
+                
+            </div>
+
+
+
+
+        </div>
+    </div></div></div>
+
+                        <div class='container-slim pt-10'>
+                <div class='container pt-10'>
+                    <div class='row'>
+                        <div class='col-4'>
+                            <div id='game-text-1'>
+                                <h2 dir="ltr">Sir Bottomtight, Adventurer at Large</h2>
+
+<p dir="ltr">You aren&rsquo;t afraid of creepy caves and monsters in this cool Sir Bottomtight game, because adventuring is what you do! You&rsquo;re on a quest for precious artifacts, and you&rsquo;ll do anything to get them. Leap boldly across deadly pits, jump onto and off of platforms, and whatever you do, don&rsquo;t stop! If anyone gets in your way, just let ole&rsquo; Bessie (your trusty revolver) do the talking.</p>
+
+<h2 dir="ltr">Grab Idols for Awesome Upgrades</h2>
+
+<p dir="ltr">Once you find a few idols, you can use them to pay for upgrades that will help you survive longer in this spooky cavern. Jump higher, survive a hit, or even suck up idols with a magnet! &nbsp;Whatever you do, make sure you don&rsquo;t stop running or jumping. This is a running arcade game, so run you must or lose quickly you will. Now, off with you, Sir Bottomtight - glory and riches await!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+    
+
+</div>
+
+
+
+    <div id='footer'>
+        <div><a href='/' class='logo'><img src='/images/footer-logo.png'></a></div>
+
+        <div class="btns">
+                <div class="footer-hover num-3"><span class="close">-</span>
+                    <p>Send an e-mail to <a href="mailto:press@kilooplay.com">press@kilooplay.com</a><br>
+for any press-related inquiries</p>
+                </div>
+
+                <div class="footer-hover num-4"><span class="close">-</span>
+                    <p>Send an e-mail to <a href="mailto:business@kilooplay.com">business@kilooplay.com</a><br>
+for any business-related inquiries</p>
+                </div>
+
+                <p></p>
+                <div class="links">
+                    <ul>
+                        
+
+                        <li><a href="/en/privacy-policy/" style="text-decoration:none"><span>Privacy Policy</span></a></li>
+                        <li><a href="/en/user-terms/" style="text-decoration:none"><span>User terms</span></a></li>
+                        <li><a href="#" style="text-decoration:none" class="no-link" id="start-consent"><span>Your consent</span></a></li>
+                        <li><span class="popup" data-popup="3">Press</span></li>
+                        <li><span class="popup" data-popup="4">Business Inquiries</span></li>
+                        <li><a href="/en/games/" style="text-decoration:none"><span>All games</span></a></li>
+                        <li><a href="/en/about-us/" style="text-decoration:none"><span>About us</span></a></li>
+                    </ul>
+
+
+
+
+                </div>
+                <p></p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- footer -->
+
+<!--  analytics -->
+<script>
+var consentCmd=window.consentCmd||[];
+consentCmd.push( function() {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-22781363-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+} );
+</script>
+
+            
+    
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('div#flags img.toggler').click(function(e){
+                e.preventDefault();
+                jQuery('#flags-foldout').toggle();
+            });
+        });
+       
+    </script>
+
+</div>
+
+</body>
+</html>
